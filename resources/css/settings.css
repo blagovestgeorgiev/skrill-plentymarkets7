@@ -1,0 +1,79 @@
+body, input, label, option, select {
+	font-family: Verdana,Arial,sans-serif,Unicode MS !important;
+    font-size: 12px !important;
+    color: #333 !important;
+}
+span {
+	font-family: Verdana,Arial,sans-serif,Unicode MS !important;
+    font-size: 11px !important;
+    color: #555 !important;
+}
+label {
+	float:left;
+	padding: 5px;
+	width: 200px;
+}
+.input-text, span, select {
+	float:left;
+	padding: 5px;
+	width: 400px;
+}
+select {
+	width: 415px;
+}
+img {
+	height: 35px;
+	margin-right: 5px;
+}
+.div-separator {
+	margin-bottom: 10px;
+}
+.div-tooltips {
+	margin-left: 205px;
+}
+.div-img {
+	height: 35px;
+}
+.clear {
+	clear: both;
+}
+.input-button {
+	margin: 5px;
+    padding: 10px;
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
+	background-color: #0db3e6;
+    color: #fff !important;
+    text-decoration: none;
+    cursor: pointer;
+    cursor: hand;
+}
+.message {
+	padding: 12px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+.success {
+	background-color: #dff0d8;
+    border-color: #d0e9c6;
+    color: #3c763d;
+}
+.failed {
+	background-color: #f2dede;
+    border-color: #ebcccc;
+    color: #a94442;
+}
+@media screen and (max-width: 768px) {
+	.div-tooltips {
+		margin-left: 0px;
+	}
+	.input-text, label, span {
+		width: 98%;
+	}
+	select {
+		width: 100%;
+	}
+}

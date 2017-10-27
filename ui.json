@@ -1,0 +1,186 @@
+{
+    "defaultEntryPoint" : "index.html",
+    "namespace"         : "Skrill",
+    "menuEntries"       : [
+                            {
+                                "label": "General Settings",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-general",
+                                "entryPoint": "../../../../../skrill/settings/skrill_general"
+                            },
+                            {
+                                "label": "All Cards and Alternative Payment Methods",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-apm",
+                                "entryPoint": "../../../../../skrill/settings/skrill_apm"
+                            },
+                            {
+                                "label": "Skrill Wallet",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-wlt",
+                                "entryPoint": "../../../../../skrill/settings/skrill_wlt"
+                            },
+                            {
+                                "label": "Paysafecard",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-psc",
+                                "entryPoint": "../../../../../skrill/settings/skrill_psc"
+                            },
+                            {
+                                "label": "Credit Cards",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-acc",
+                                "entryPoint": "../../../../../skrill/settings/skrill_acc"
+                            },
+                            {
+                                "label": "Visa",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-vsa",
+                                "entryPoint": "../../../../../skrill/settings/skrill_vsa"
+                            },
+                            {
+                                "label": "MasterCard",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-msc",
+                                "entryPoint": "../../../../../skrill/settings/skrill_msc"
+                            },
+                            {
+                                "label": "Maestro",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-mae",
+                                "entryPoint": "../../../../../skrill/settings/skrill_mae"
+                            },
+                            {
+                                "label": "American Express",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-amx",
+                                "entryPoint": "../../../../../skrill/settings/skrill_amx"
+                            },
+                            {
+                                "label": "Carte Bleue by Visa",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-gcb",
+                                "entryPoint": "../../../../../skrill/settings/skrill_gcb"
+                            },
+                            {
+                                "label": "Dankort by Visa",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-dnk",
+                                "entryPoint": "../../../../../skrill/settings/skrill_dnk"
+                            },
+                            {
+                                "label": "PostePay by Visa",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-psp",
+                                "entryPoint": "../../../../../skrill/settings/skrill_psp"
+                            },
+                            {
+                                "label": "CartaSi by Visa",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-csi",
+                                "entryPoint": "../../../../../skrill/settings/skrill_csi"
+                            },
+                            {
+                                "label": "Rapid Transfer",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-obt",
+                                "entryPoint": "../../../../../skrill/settings/skrill_obt"
+                            },
+                            {
+                                "label": "Giropay",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-gir",
+                                "entryPoint": "../../../../../skrill/settings/skrill_gir"
+                            },
+                            {
+                                "label": "Direct Debit / ELV",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-did",
+                                "entryPoint": "../../../../../skrill/settings/skrill_did"
+                            },
+                            {
+                                "label": "Klarna",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-sft",
+                                "entryPoint": "../../../../../skrill/settings/skrill_sft"
+                            },
+                            {
+                                "label": "Nordea Solo",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-ebt",
+                                "entryPoint": "../../../../../skrill/settings/skrill_ebt"
+                            },
+                            {
+                                "label": "iDEAL",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-idl",
+                                "entryPoint": "../../../../../skrill/settings/skrill_idl"
+                            },
+                            {
+                                "label": "EPS (Netpay)",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-npy",
+                                "entryPoint": "../../../../../skrill/settings/skrill_npy"
+                            },
+                            {
+                                "label": "POLi",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-pli",
+                                "entryPoint": "../../../../../skrill/settings/skrill_pli"
+                            },
+                            {
+                                "label": "Przelewy24",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-pwy",
+                                "entryPoint": "../../../../../skrill/settings/skrill_pwy"
+                            },
+                            {
+                                "label": "ePay.bg",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-epy",
+                                "entryPoint": "../../../../../skrill/settings/skrill_epy"
+                            },
+                            {
+                                "label": "Alipay",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-ali",
+                                "entryPoint": "../../../../../skrill/settings/skrill_ali"
+                            },
+                            {
+                                "label": "Neteller",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-ntl",
+                                "entryPoint": "../../../../../skrill/settings/skrill_ntl"
+                            },
+                            {
+                                "label": "Cash / Invoice",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-aci",
+                                "entryPoint": "../../../../../skrill/settings/skrill_aci"
+                            },
+                            {
+                                "label": "Direct Bank Transfer",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-adb",
+                                "entryPoint": "../../../../../skrill/settings/skrill_adb"
+                            },
+                            {
+                                "label": "Manual Bank Transfer",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-aob",
+                                "entryPoint": "../../../../../skrill/settings/skrill_aob"
+                            },
+                            {
+                                "label": "Unionpay",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-aup",
+                                "entryPoint": "../../../../../skrill/settings/skrill_aup"
+                            },
+                            {
+                                "label": "Bitcoin",
+                                "menu": "settings/orders/skrill",
+                                "urlKey": "settings-skrill-btc",
+                                "entryPoint": "../../../../../skrill/settings/skrill_btc"
+                            }
+                          ]
+}

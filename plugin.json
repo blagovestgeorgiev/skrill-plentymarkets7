@@ -1,0 +1,40 @@
+{
+    "name": "Skrill",
+    "marketplaceName": {"de":"Skrill", "en":"Skrill"},
+    "namespace": "Skrill",
+    "type": "payment",
+    "version": "1.0.0",
+    "license": "OSL-3.0",
+    "isClosedSource": "True",
+    "pluginIcon": "icon_plugin_xs.png",
+    "price": 0.00,
+    "description": "The module allows you to accept payments via cards, over 20 local payment methods and more than 80 banks. This extension enables merchants to view information about payments and configure which payment methods are shown to customers. Merchants can also view payment status information and refund payments from within the Admin interface.",
+    "shortDescription": {
+        "de": "Mit Millionen von treuen Kunden weltweit deckt Skrill den Bedarf von über 156.000 Unternehmen rund um den Globus und bietet ihnen damit eine Möglichkeit, Geld auf bequeme und sichere Art in fast 200 Ländern und 40 Währungen zu senden und zu empfangen.",
+        "en": "Trusted by millions across the globe Skrill meets the needs of more than 156,000 businesses worldwide providing a convenient and secure way to send and receive money in nearly 200 countries and 40 currencies."
+    },
+    "categories": ["3519"],
+    "keywords": [
+        "Credit Cards",
+        "Payment",
+        "Payment Gateway",
+        "Debit Cards",
+        "Payment Method",
+        "Sofort",
+        "Giropay"
+    ],
+    "author": "PAYRETO GmbH",
+    "authorIcon": "icon_author_xs.png",
+    "email": "newbusiness@paysafe.com",
+    "phone": "+44 2083389332",
+    "serviceProvider": "Skrill\\Providers\\SkrillServiceProvider",
+    "containers"        : [],
+    "dataProviders"     : [],
+    "javaScriptFiles"   : [],
+    "require"           : [],
+    "dependencies"      : [],
+    "runOnBuild"        : [
+        "Skrill\\Migrations\\CreatePaymentMethod",
+        "Skrill\\Migrations\\CreateSkrillTables"
+    ]
+}
