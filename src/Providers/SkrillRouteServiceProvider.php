@@ -38,15 +38,18 @@ class SkrillRouteServiceProvider extends RouteServiceProvider
 		$router->post('skrill/settings/save', 'Skrill\Controllers\SettingsController@saveConfiguration');
 
 		// Routes for Skrill status_url
-		$router->post('payment/skrill/status', 'Skrill\Controllers\PaymentNotificationController@handleStatus');
+		$router->post('payment/skrill/status', 'Skrill\Controllers\PaymentNotificationController@handleStatusUrl');
 
 		// Routes for Skrill return_url
-		$router->get('payment/skrill/return', 'Skrill\Controllers\PaymentController@handleReturn');
+		$router->get('payment/skrill/return', 'Skrill\Controllers\PaymentController@handleReturnUrl');
 
 		// Routes for Skrill refund_status_url
-		$router->post('payment/skrill/refundstatus', 'Skrill\Controllers\PaymentNotificationController@handleRefundStatus');
+		$router->post(
+						'payment/skrill/refundstatus',
+						'Skrill\Controllers\PaymentNotificationController@handleRefundStatusUrl'
+		);
 
 		// Routes for Skrill payment widget
-		$router->get('payment/skrill/pay/{sid}', 'Skrill\Controllers\PaymentController@handlePayment');
+		$router->get('payment/skrill/pay/{sid}', 'Skrill\Controllers\PaymentController@displayPaymentWidget');
 	}
 }

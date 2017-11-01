@@ -43,7 +43,7 @@ class PaymentNotificationController extends Controller
 	 * handle status_url from payment gateway
 	 * @return string
 	 */
-	public function handleStatus()
+	public function handleStatusUrl()
 	{
 		$this->getLogger(__METHOD__)->error('Skrill:status_url', $this->request->all());
 
@@ -57,7 +57,7 @@ class PaymentNotificationController extends Controller
 	 * handle refund_status_url from refund payment gateway
 	 * @return string
 	 */
-	public function handleRefundStatus()
+	public function handleRefundStatusUrl()
 	{
 		$this->getLogger(__METHOD__)->error('Skrill:refund_status_url', $this->request->all());
 
