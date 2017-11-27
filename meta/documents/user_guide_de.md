@@ -1,7 +1,7 @@
 <div class="alert alert-warning" role="alert">
     <strong><i>Wichtig:</i></strong> Das Skrill-Plugin wurde zur Verwendung mit dem Online-Store Ceres entwickelt und funkioniert nur mit dessen Struktur oder Plugins anderer Vorlagen. Ein IO-Plugin wird benötigt. Für die optimale Kompatibilität empfiehlt sich IO/Ceres Version 1.4.0.
 </div>
-
+<br>
 <div class="alert alert-warning" role="alert">
     <strong><i>Wichtig:</i></strong> Achten Sie darauf, dass die Position des Skrill-Plugins kleiner ist als die IO/Ceres-Position. Dieses Problem lässt sich vermeiden, indem die Position der IO/Ceres-Plugins auf 99 eingestellt wird.
 </div>
@@ -280,5 +280,3 @@ Ereignisprozedur einrichten, um eine Skrill-Zahlung rückzuerstattetn.
 	<li>Speichern Sie die Einstellungen.</li>
 </ul>
 Wenn Sie nun eine neue Gutschrift erstellen, wird die Skrill-Rückerstattung ausgeführt.
-
-## This project is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE. – find further information in the [LICENSE.md](https://github.com/plentymarkets/plugin-payment-paypal/blob/master/LICENSE.md).
