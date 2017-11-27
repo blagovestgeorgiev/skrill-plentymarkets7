@@ -5,7 +5,7 @@ Wie man
 
 Bevor Sie die volle Funktionalität des Plugins nutzen können, müssen Sie zunächst die allgemeinen Einstellungen vornehmen.
 
-1. Navigieren Sie zu **Einstellungen&nbsp;» Bestellungen &nbsp;»Skrill&nbsp;» Allgemeine Einstellungen".
+1. Navigieren Sie zu **Einstellungen&nbsp;»Bestellungen&nbsp;»Skrill&nbsp;» Allgemeine Einstellungen.**
 2. Wählen Sie einen Client (Geschäft) aus.
 3. Nehmen Sie die Einstellungen vor.
 4. **Speichern** Sie die Einstellungen.
@@ -69,7 +69,7 @@ Nach der Installation des Skrill-Plugins und dem Verbinden Ihres Kontos ist Skri
 
 ##### Aktivieren von Skrill PLUS:
 
-1. Navigieren Sie zu **Einstellungen&nbsp;»» Skrill&nbsp;»Skrill PLUS**. 2. Wählen Sie einen Client (Geschäft) aus. 3. Nehmen Sie die Einstellungen vor. Beachten Sie die Angaben in Tabelle 2. 4. **Speichern Sie** die Einstellungen.
+1. Navigieren Sie zu **Einstellungen&nbsp;»Bestellungen&nbsp;»Skrill&nbsp;»Skrill PLUS**. 2. Wählen Sie einen Client (Geschäft) aus. 3. Nehmen Sie die Einstellungen vor. Beachten Sie die Angaben in Tabelle 2. 4. **Speichern Sie** die Einstellungen.
 
 <table>
 <caption>Tabelle 2: Konfigurieren von Skrill PLUS</caption>
@@ -166,10 +166,10 @@ Prozentsatz <strong> Ausland (Aufpreis) </strong>: Geben Sie einen Prozentwert e
 
 Dieses Menü entspricht dem für Skrill PLUS, mit Ausnahme der Beschreibung der Aktivierungstaste. Wenn Sie bereits Einstellungen im Menü **Skrill / Skrill PLUS** vorgenommen haben, können Sie diese auch hier anwenden.
 
-1. Navigieren Sie zu **Einstellungen&nbsp;Skripts&nbsp;»» Skrill-Raten von Skrill**. 2. Wählen Sie einen Client (Geschäft) aus. 3. Nehmen Sie die Einstellungen vor. Beachten Sie die Angaben in Tabelle 3. 4. ** Speichern Sie ** die Einstellungen.
+1. Navigieren Sie zu **Einstellungen&nbsp;Skripts&nbsp;»Bestellungen&nbsp;»Skrill-Raten von Skrill**. 2. Wählen Sie einen Client (Geschäft) aus. 3. Nehmen Sie die Einstellungen vor. Beachten Sie die Angaben in Tabelle 3. 4. **Speichern Sie** die Einstellungen.
 
 <div class="alert alert-warning" role="alert">
-    <strong> <i> Wichtig: </i> </strong> Um diese Zahlungsmethode in vollem Umfang und gemäß den gesetzlichen Bestimmungen nutzen zu können, müssen Sie <a href="#10."> <strong> link < / strong> </a> die Container </b> Skrill Ratenvorbereitungs-Schaltfläche </b>, <b> Skrill Ratenfinanzierungs-Check </b> und <b> Skrill Ratenfinanzierungskosten </b>. <br /> < br>
+    <strong> <i> Wichtig: </i> </strong> Um diese Zahlungsmethode in vollem Umfang und gemäß den gesetzlichen Bestimmungen nutzen zu können, müssen Sie <a href="#10."> <strong> link </strong> </a> die Container </b> Skrill Ratenvorbereitungs-Schaltfläche </b>, <b> Skrill Ratenfinanzierungs-Check </b> und <b> Skrill Ratenfinanzierungskosten </b>. <br /> <br>
 Darüber hinaus sind von Skrill bereitgestellte Ratenzahlungen nur für deutsche Online-Shops ausgewählter Skrill-Verkäufer nach erfolgreicher Bewerbung verfügbar. Sich bewerben <a href="https://www.paypal.com/de/webapps/mpp/installments"><strong>Hier</strong></a> für von Skrill bereitgestellte Raten.
 </div>
 
@@ -271,7 +271,7 @@ Sie haben mehrere Möglichkeiten, um Skrill PLUS, Skrill-fähige Raten und die S
 
 ##### Verknüpfen der Skrill PLUS Wall:
 
-1. Klicken Sie auf ** Start &nbsp;» Plugins ** Plugins **. 2. Klicken Sie auf die Registerkarte **Inhalt**. 3. Wählen Sie den Bereich Skrill PLUS Wall aus. 4. Wählen Sie einen, mehrere oder alle Container aus, die die Skrill PLUS Wall verwenden sollen. Beachten Sie die Angaben in Tabelle 4. <br /> → Der Inhalt ist mit dem Container verknüpft.
+1. Klicken Sie auf **Start &nbsp;»Plugins**. 2. Klicken Sie auf die Registerkarte **Inhalt**. 3. Wählen Sie den Bereich Skrill PLUS Wall aus. 4. Wählen Sie einen, mehrere oder alle Container aus, die die Skrill PLUS Wall verwenden sollen. Beachten Sie die Angaben in Tabelle 4. <br /> → Der Inhalt ist mit dem Container verknüpft.
 
 <table>
 <caption>Tabelle 4: Container verknüpfen</caption>
@@ -367,7 +367,7 @@ Richten Sie eine Ereignisprozedur ein, um eine Skrill-Zahlung automatisch zurüc
 
 ##### Eine Ereignisprozedur einrichten:
 
-1. Gehen Sie zu **Einstellungen »Aufträge» Ereignisprozeduren**. 2. Klicken Sie auf **Ereignisprozedur hinzufügen**. → Das Fenster **Neue Ereignisprozedur erstellen** wird geöffnet. 3. Geben Sie den Namen ein. 4. Wählen Sie das in Tabelle 4 aufgeführte Ereignis aus. 5. **Speichern Sie** die Einstellungen. 6. Beachten Sie die Erläuterungen in Tabelle 4 und führen Sie die Einstellungen wie gewünscht durch. 7. Setzen Sie ein Häkchen neben der Option **Aktiv**. 8. **Speichern Sie** die Einstellungen.
+1. Gehen Sie zu **Einstellungen&nbsp;»Aufträge&nbsp;»Ereignisprozeduren**. 2. Klicken Sie auf **Ereignisprozedur&nbsp;hinzufügen**. → Das Fenster **Neue&nbsp;Ereignisprozedur&nbsp;erstellen** wird geöffnet. 3. Geben Sie den Namen ein. 4. Wählen Sie das in Tabelle 4 aufgeführte Ereignis aus. 5. **Speichern&nbsp;Sie** die Einstellungen. 6. Beachten Sie die Erläuterungen in Tabelle 4 und führen Sie die Einstellungen wie gewünscht durch. 7. Setzen Sie ein Häkchen neben der Option **Aktiv**. 8. **Speichern Sie** die Einstellungen.
 
 <table>
 	<thead>
