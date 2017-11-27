@@ -1,405 +1,284 @@
-Note: The Skrill plugin has been developed for use with the online store Ceres and only works with its structure or other template plugins.
-
-How to
-## Setting up Skrill general settings
-
-Before using the full functionality of the plugin, you first have to setting the general settings.
-
-1. Go to **Settings&nbsp;» Orders&nbsp;» Skrill&nbsp;» General Settings**.
-2. Select a Client (store).
-3. Carry out the settings.
-4. **Save** the settings.
-
-Pay attention to the information given in the table bellow
-
-<table>
-<caption>Table: Configuring General Settings</caption>
-	<thead>
-		<th>
-			Setting
-		</th>
-		<th>
-			Explanation
-		</th>
-	</thead>
-	<tbody>
-		<tr>
-			<td class="th" align=LEFT colspan="2">General Settings</td>
-		</tr>
-		<tr>
-			<td>
-				<b>Merchant ID</b>
-			</td>
-			<td>The Your Skrill customer ID. It is displayed in the upper-right corner of your Skrill account.</td>
-		</tr>
-		<tr>
-			<td>
-				<b>Merchant Account (Email)</b>
-			</td>
-			<td>Your Skrill account email address.</td>
-		</tr>
-		<tr>
-			<td>
-				<b>Merchant Account (Email)</b>
-			</td>
-			<td>Your Skrill account email address.</td>
-		</tr>
-		<tr>
-			<td>
-				<b>Merchant Account (Email)</b>
-			</td>
-			<td>Your Skrill account email address.</td>
-		</tr>
-		<tr>
-			<td>
-				<b>Merchant Account (Email)</b>
-			</td>
-			<td>Your Skrill account email address.</td>
-		</tr>
-	</tbody>
-</table>
-
-## Managing payment methods
-
-Discover how to offer the payment methods offered by Skrill in your online store.
-
-### Activating Skrill PLUS
-
-After installing the Skrill plugin and connecting your account, Skrill is automatically available as payment method. This payment method appears in the checkout among the other payment methods according to its priority.<br />Proceed as described below to activate Skrill PLUS. The Skrill PLUS Wall offers Germany's most used payment methods: Skrill, Debit, Credit card as well as pay upon invoice&nbsp;– even without a Skrill account.
-
-##### Activating Skrill PLUS:
-
-1. Go to **Settings&nbsp;» Orders&nbsp;» Skrill&nbsp;» Skrill PLUS**. 2. Select a Client (store). 3. Carry out the settings. Pay attention to the information given in table 2. 4. **Save** the settings.
-
-<table>
-<caption>Table 2: Configuring Skrill PLUS</caption>
-	<thead>
-		<th>
-			Setting
-		</th>
-		<th>
-			Explanation
-		</th>
-	</thead>
-	<tbody>
-		<tr>
-		<td class="th" align=CENTER colspan="2">General</td>
-		</tr>
-		<tr>
-			<td>
-				<b>Active account</b>
-			</td>
-			<td>The Skrill account for which the settings apply. Every client on the left has to be connected with an account. It is possible to use one account for several clients.</td>
-		</tr>
-		<tr>
-			<td>
-				<b>Priority</b>
-			</td>
-			<td>Determines the place of Skrill in the checkout as long as Skrill PLUS is not active.</td>
-		</tr>
-		<tr>
-		<td class="th" align=CENTER colspan="2">Skrill PLUS</td>
-		</tr>
-		<tr>
-			<td>
-				<b>Activate</b>
-			</td>
-			<td>
-				Activate the Skrill PLUS Wall in the checkout. <a href="#10."><strong>Connect</strong></a> at least one container to use the Skrill PLUS Wall.
-			</td>
-		</tr>
-		<tr>
-		<td class="th" align=CENTER colspan="2">Language settings</td>
-		</tr>
-		<tr>
-			<td>
-				<b>Language</b>
-			</td>
-			<td>
-				Set up language packages for all the languages the shop is available in. Skrill uses these packages when a customer changes the language of the online store.
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<b>Info page</b>
-			</td>
-			<td>
-				Select a category page of the type <strong>content</strong> or enter the URL of a website to provide <strong><a href="https://www.plentymarkets.co.uk/manual/payment/managing-bank-details/#2-2">information about the payment method</a></strong>.
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<b>Logo</b>
-			</td>
-			<td>
-			A HTTPS URL that leads to the logo. Valid file formats are .gif, .jpg or .png. The image may not exceed a maximum size of 190 pixels in width and 60 pixels in height. Skrill cuts off images that are larger. Skrill places the logo at the very top of the shopping cart overview.
-			</td>
-		</tr>
-		<tr>
-		<td class="th" align=CENTER colspan="2">Additional settings</td>
-		</tr>
-		<tr>
-			<td>
-				<b>Countries of delivery</b>
-			</td>
-			<td>
-				The Skrill payment method is active only for the countries in this list.
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<b>Surcharges</b>
-			</td>
-			<td>
-If the payment with Skrill results in additional costs, enter the percentage value or flat rate value. The choice depends on the conditions of your contract.<strong>Domestic (surcharge):</strong> Enter a flat rate. The value that is entered will be taken into consideration for those orders that correspond to the system country. Once the customer has selected the payment method, these costs will be added to the particular order in the order process. The amount will be added to the total in the order and will not be displayed individually.<br />
-
-Percentage <strong>Domestic (surcharge):</strong> Enter a percentage value. The value that is entered will be taken into consideration for those orders that correspond to the system country.<strong>Foreign countries (surcharge):</strong> Enter a flat rate. The value that is entered will be taken into consideration for those orders that correspond to a foreign country. Once the customer has selected the payment method, these costs will be added to the particular order in the order process. The amount will be added to the total in the order and will not be displayed individually.<br />
-
-Percentage <strong>Foreign countries (surcharge)</strong>: Enter a percentage value. The value that is entered will be taken into consideration for those orders that correspond to a foreign country.<br />
-
-<strong><i>Important:</i></strong> Do not enter a value into both fields (Percentage and Flat rate).
-		</tr>
-	</tbody>
-</table>
-
-### Activating Installments Powered by Skrill
-
-This menu is equal to the one for Skrill PLUS, with the exception of the description of the activation button. If you already have carried out settings in the menu **Skrill / Skrill PLUS**, you can apply these here as well.
-
-1. Go to **Settings&nbsp;» Orders&nbsp;» Skrill&nbsp;» Installments Powered by Skrill**. 2. Select a Client (store). 3. Carry out the settings. Pay attention to the information given in table 3. 4. **Save** the settings.
-
 <div class="alert alert-warning" role="alert">
-    <strong><i>Important:</i></strong> To use this payment method to its full extent and in accordance with legal requirements, you have to <a href="#10."><strong>link</strong></a> the containers <b>Skrill Installment Prepare Button</b>, <b>Skrill Installment Financing Check</b> and <b>Skrill Installment Financing Costs</b>.<br /><br />In addition, Installments Powered by Skrill is only available for German online stores of selected Skrill Sellers after successful application. Apply <a href="https://www.paypal.com/de/webapps/mpp/installments"><strong>here</strong></a> for Installments Powered by Skrill.
+    <strong><i>Wichtig:</i></strong> Das Skrill-Plugin wurde zur Verwendung mit dem Online-Store Ceres entwickelt und funkioniert nur mit dessen Struktur oder Plugins anderer Vorlagen. Ein IO-Plugin wird benötigt. Für die optimale Kompatibilität empfiehlt sich IO/Ceres Version 1.4.0.
 </div>
 
+<div class="alert alert-warning" role="alert">
+    <strong><i>Wichtig:</i></strong> Achten Sie darauf, dass die Position des Skrill-Plugins kleiner ist als die IO/Ceres-Position. Dieses Problem lässt sich vermeiden, indem die Position der IO/Ceres-Plugins auf 99 eingestellt wird.
+</div>
+
+Plugins, die Sie auf plentyMarketplace gekauft haben, werden im Menü Plugins » Purchases (Plugins » Käufe) Ihres plentymarkets-Systems abgelegt. Im Folgenden wird beschrieben, wie Sie die gekauften Plugins installieren.
+
+## Installieren der Plugins
+
+Nach dem Kauf eines Plugin auf plentyMarketplace steht dieses im Reiter Plugins » Purchases (Plugins <strong>»</strong> Käufe) zur Verfügung, von wo es installiert werden kann.
+
+#### Installieren der Plugins:
+<ul>
+	<li>Navigieren Sie zu Plugins » Purchases (Plugins » Käufe).</li>
+	<li>→ Alle auf plentyMarketplace gekauften Plugins werden hier angezeigt.</li>
+	<li>Klicken Sie in der Zeile des Plugin auf „Install plugin“ (Plugin installieren).</li>
+	<li>→ Das Fenster „Install plugin“ (Plugin installieren) wird geöffnet.</li>
+	<li>Wählen Sie die Plugin-Version aus dem Dropdown-Menü aus.</li>
+	<li>→ Die neueste Plugin-Version ist voreingestellt.</li>
+	<li>Klicken Sie auf „Install“ (Installieren).</li>
+	<li>→ Das Plugin wird installiert und dann in der Plugin-Übersicht angezeigt.</li>
+</ul>
+
+## Bereitstellen von Plugins
+
+Das Menü Plugins » Plugin overview (Plugins » Plugin-Übersicht) dient als Ihr Posteingang für Plugins. Von dort können Sie IHre Plugins in Productive einsetzen.
+
+<ul>
+	<li>Navigieren Sie zu Plugins » Plugin overview (Plugins » Plugin-Übersicht).</li>
+	<li>In Productive können Sie die Plugins aktivieren oder deaktivieren.</li>
+	<li>→ Änderungen, die nach der letzten Bereitstellung vorgenommen wurden, werden in der Menüleiste hervorgehoben.</li>
+	<li>Führen Sie Ihren Cursor über die Schaltfläche „More“ (Mehr).</li>
+	<li>→ Das Kontextmenü wird geöffnet.</li>
+	<li>Klicken Sie auf „Select Clients“ (Clients auswählen).</li>
+	<li>→ Das Fenster „Select Clients“ (Clients auswählen) wird geöffnet.</li>
+	<li>Aktivieren Sie die Clients.</li>
+	<li>Speichern Sie die Einstellungen.</li>
+	<li>→ Die aktivierten Clients werden verknüpft.</li>
+	<li>Klicken Sie in der Menüleiste auf „Deploy plugins in Productive“ (Plugins in Productive bereitstellen).</li>
+	<li>→ Die aktivierten Plugins werden markiert und der Bereitstellungsprozess eingeleitet.</li>
+	<li>→ Die Farbe des Symbols der bereitgestellten Plugins wechselt nach Grün.</li>
+</ul>
+
+Die in der Menüleiste verfügbaren Einstellungen werden in der folgenden Tabelle erklärt.
+
 <table>
-<caption>Table 3: Carrying out settings for Installments Powered by Skrill</caption>
 	<thead>
 		<th>
-			Setting
+			Einstellung
 		</th>
 		<th>
-			Explanation
+			Erklärung
 		</th>
 	</thead>
 	<tbody>
 		<tr>
-		<td class="th" align=CENTER colspan="2">General</td>
+			<td>
+				Wechsel zur Tabellenansicht; Wechsel zur Kartenansicht
+			</td>
+			<td>Klicken Sie, um zwischen Kartenansicht und Tabellenansicht zu wechseln.</td>
 		</tr>
 		<tr>
 			<td>
-				<b>Active account</b>
+				Einsetzen von Plugins in Stage
 			</td>
-			<td>The Skrill account for which the settings apply. Every client on the left has to be connected with an account. It is possible to use one account for several clients.</td>
+			<td>Markiert alle aktivierten Plugins und stellt Sie im Vorschaumodus Stage bereit. In diesem Modus wird eine Vorschau der aktiven Plugins bereitgestellt, damit Sie Ihre Funktion testen können. Änderungen, die nach der letzten Bereitstellung vorgenommen wurden, werden in Gelb hervorgehoben.
+			<br>
+			<i>Hinweis:</i> Alle als aktiv markierten Plugins werden bei der Bereitstellung von Plugins in Stage sequenziell kompiliert. Das kann mehrere Minuten dauern. Wenn ein Fehler auftritt, wird keines der Plugins bereitgestellt.</td>
 		</tr>
 		<tr>
 			<td>
-				<b>Priority</b>
+				Plugin-Protokoll (Stage)
 			</td>
-			<td>Determines the place of Skrill in the checkout as long as Skrill PLUS is not active.</td>
-		</tr>
-		<tr>
-		<td class="th" align=CENTER colspan="2">Specific Upstream Presentment</td>
+			<td>Übersicht der Bereitstellungsprozesse von Plugins in Stage. Fehlgeschlagene Prozesse werden hervorgehoben. Fehler, die bei der letzten Bereitstellung von Plugins in Stage auftreten, werden in einer Liste angezeigt.</td>
 		</tr>
 		<tr>
 			<td>
-				<b>Activate</b>
+				Plugins in Productive bereitstellen
 			</td>
-			<td>
-				Background calculation of financing conditions. Depending on the linked containers, this could be, e.g., the purchase of the active item. If this box is unchecked, only the general possibility of paying in installments is advertised.			</td>
-		</tr>
-		<tr>
-		<td class="th" align=CENTER colspan="2">Language settings</td>
-		</tr>
-		<tr>
-			<td>
-				<b>Language</b>
-			</td>
-			<td>
-				Set up language packages for all the languages the shop is available in. Skrill uses these packages when a customer changes the language of the online store.
-			</td>
+			<td>Markiert alle Plugins und stellt sie im produktiven Modus Productive bereit. In diesem Modus werden aktive Plugins ausgeführt und veröffentlicht. Änderungen, die nach der letzten Bereitstellung vorgenommen wurden, werden in Gelb hervorgehoben.
+			<br>
+			<i>Hinweis:</i> Alle als aktiv markierten Plugins werden bei der Bereitstellung von Plugins in Productive sequenziell kompiliert. Das kann mehrere Minuten dauern. Wenn ein Fehler auftritt, wird keines der Plugins bereitgestellt.</td>
 		</tr>
 		<tr>
 			<td>
-				<b>Info page</b>
+				Plugin-Protokoll (Stage)
 			</td>
-			<td>
-				Select a category page of the type <strong>content</strong> or enter the URL of a website to provide <strong><a href="https://www.plentymarkets.co.uk/manual/payment/managing-bank-details/#2-2">information about the payment method</a></strong>.
-			</td>
+			<td>Übersicht der Bereitstellungsprozesse von Plugins in Productive. Fehlegeschlagene Prozesse werden hervorgehoben. Fehler, die bei der letzten Bereitstellung von Plugins in Stage auftreten, werden in einer Liste angezeigt.</td>
 		</tr>
 		<tr>
 			<td>
-				<b>Logo</b>
+				Wechsel zu Stage; Wechsel zur Productive
 			</td>
-			<td>
-				A HTTPS URL that leads to the logo. Valid file formats are .gif, .jpg or .png. The image may not exceed a maximum size of 190 pixels in width and 60 pixels in height. Skrill cuts off images that are larger. Skrill places the logo at the very top of the shopping cart overview.
-			</td>
-		</tr>
-		<tr>
-		<td class="th" align=CENTER colspan="2">Additional settings</td>
-		</tr>
-		<tr>
-			<td>
-				<b>Countries of delivery</b>
-			</td>
-			<td>
-				The Skrill payment method is active only for the countries in this list.
-			</td>
+			<td>Wechsel zu Stage = Änderung des Modus vom produktiven Modus Productive zum Vorschaumodus Stage. Alle in Stage bereitgestellten Plugins werden angezeigt, wenn der Online-Store im Browser geöffnet wird. Die Plugins werden nur den Benutzern Ihres plentymarkets-Systems angezeigt. Nach 120 Minuten wird der Modus automatisch wieder auf Productive zurückgesetzt.
+				<br>
+			<i>Wichtig:</i> Der Modus bereitgestellter Plugins wechselt in den Vorschaumodus; die Datenbank wird jedoch nicht geändert. Mit den entsprechenden Genehmigungen können diese Plugins auf Daten in der Datenbank Ihres produktiven Systems zugreifen und sie ändern oder sogar löschen.
+			<br>
+			Wechsel zu Productive = Änderung des Modus von Stage zurück zu Productive.</td>
 		</tr>
 		<tr>
 			<td>
-				<b>Surcharges</b>
+				Automatisch bereitstellen
 			</td>
-			<td>
-If the payment with Skrill results in additional costs, enter the percentage value or flat rate value. The choice depends on the conditions of your contract.<strong>Domestic (surcharge):</strong> Enter a flat rate. The value that is entered will be taken into consideration for those orders that correspond to the system country. Once the customer has selected the payment method, these costs will be added to the particular order in the order process. The amount will be added to the total in the order and will not be displayed individually.<br />
-
-Percentage <strong>Domestic (surcharge):</strong> Enter a percentage value. The value that is entered will be taken into consideration for those orders that correspond to the system country.<strong>Foreign countries (surcharge):</strong> Enter a flat rate. The value that is entered will be taken into consideration for those orders that correspond to a foreign country. Once the customer has selected the payment method, these costs will be added to the particular order in the order process. The amount will be added to the total in the order and will not be displayed individually.<br />
-
-Percentage <strong>Foreign countries (surcharge)</strong>: Enter a percentage value. The value that is entered will be taken into consideration for those orders that correspond to a foreign country.<br />
-
-<strong><i>Important:</i></strong> Do not enter a value into both fields (Percentage and Flat rate).
-			</td>
+			<td>Wenn Sie diese Funktion aktivieren, werden Plugins automatically in Stage bereitgestellt, sobald Updates verfügbar sind. Plugins müssen in Stage bereits aktiv sein.</td>
 		</tr>
 	</tbody>
 </table>
 
-## Linking template containers
+## Aktualisieren von Plugins
 
-You have multiple options to integrate Skrill PLUS, Installments Powered by Skrill and the Skrill Express Checkout button in your online store. For this purpose, the plentymarkets system offers containers at relevant places which can be filled with content to meet your needs.
+Plugin-Updates werden sowohl in plentyMarketplace als auch im Backend von plentymarkets angezeigt. Bei neuen verfügbaren Versionen wird das Kennzeichen „Update plugin“ (Plugin aktualisieren) innerhalb der Plugin-Übersicht in der rechten oberen Ecke einer Plugin-Karte angezeigt. Nachstehend wird beschrieben, wie Sie eine neue Version eines Plugin installieren, das Sie auf plentyMarketplace gekauft haben.
 
-##### Linking the Skrill PLUS Wall:
+#### Aktualisieren von Plugins:
+<ul>
+	<li>Navigieren Sie zu Plugins » Plugin overview (Plugins » Plugin-Übersicht).</li>
+	<li>Führen Sie Ihren Cursor über die Schaltfläche „More“ (Mehr).</li>
+	<li>→ Das Kontextmenü wird geöffnet.</li>
+	<li>Klicken Sie auf „Update plugin“ (Plugin aktualisieren).</li>
+	<li>→ Das Fenster „Update plugin“ (Plugin aktualisieren) wird geöffnet.</li>
+	<li>Wählen Sie die Version aus dem Dropdown-Menü aus.</li>
+	<li>Klicken Sie auf „Update plugin“ (Plugin aktualisieren).</li>
+	<li>→ Das Plugin wird auf die neue Version aktualisiert.</li>
+</ul>
 
-1. Click on **Start&nbsp;» Plugins**. 2. Click on the **Content** tab. 3. Select the area Skrill PLUS Wall. 4. Select one, several or all containers which shall use the Skrill PLUS Wall. Pay attention to the information given in table 4.<br />→ The content is linked with the container.
+Damit Sie das Plugin in der aktualisierten Version verwenden können, müssen Sie es wie oben beschrieben neu bereitstellen.
+
+<p style="color: red;">
+	Beim Aktualisieren eines Plugin können nur neuere Versionen des Plugin installiert werden. Wenn Sie das Plugin auf eine ältere Version zurücksetzen möchten, löschen Sie zuerst das Plugin und installieren Sie es erneut mit der gewünschten Version.
+</p>
+
+## Einrichten von Skrill in plentymarkets
+
+Damit Sie den vollen Funktionsumfang des Plugins nutzen können, müssen Sie zuerst die allgemeinen Einstellungen anpassen.
+
+#### Verwalten der allgemeinen Einstellungen:
+<ul>
+	<li>Navigieren Sie zu Settings » Orders » Skrill » General Settings (Einstellungen » Aufträge » Skrill » Allgemeine Einstellungen).</li>
+	<li>Wählen Sie einen Client (Store) aus.</li>
+	<li>Nehmen Sie die Einstellungen vor.</li>
+	<li>Speichern Sie die Einstellungen.</li>
+</ul>
 
 <table>
-<caption>Table 4: Linking containers</caption>
+	<caption>Achten Sie auf die Informationen in der Tabelle unten</caption>
 	<thead>
 		<th>
-			Link
+			Einstellung
 		</th>
 		<th>
-			Explanation
+			Erklärung
 		</th>
 	</thead>
 	<tbody>
 		<tr>
-		<td class="th" align=CENTER colspan="2">General</td>
-		</tr>
-		<tr>
-        	<td>
-        		<b>Skrill scripts</b>
-        	</td>
-        	<td>The container Script loader: Register/load JS has to be linked to activate scripts.</td>
-        		</tr>
-		<tr>
 			<td>
-				<b>Skrill Express Checkout button</b>
+				Händler-ID
 			</td>
-			<td>Optional: Link the Skrill Express Checkout button where it is needed, e.g. on the item page (Single item) or next to the shopping cart. In clicking this button, the customer can purchase the item or the content of the shopping cart at once, without going through the regular checkout. In this case, the customer will be forwarded to the Skrill payment process. The shipping address is provided by Skrill.</td>
-		</tr>
-		<tr>
-		<tr>
-		<td class="th" align=CENTER colspan="2">Skrill PLUS</td>
+			<td>Ihre Skrill-Kunden-ID. Diese wird in der rechten oberen Ecke Ihres Skrill-Kontos angezeigt.</td>
 		</tr>
 		<tr>
 			<td>
-				<b>Skrill PLUS Wall</b>
+				Händlerkonto (E-Mail)
 			</td>
-			<td>
-				A link with the container <strong>Checkout: Override payment method replaces all previous payment methods with the Skrill PLUS Wall. A link with the container Checkout: Override payment method</strong> replaces all previous payment methods with the Skrill PLUS Wall. Any payment methods offered in addition to those inside the Wall&nbsp;– Skrill, Debit, Credit card and pay upon invoice&nbsp;– will be displayed below these four inside the wall in order of their priority. <a id="10." name="10."></a>
-			</td>
-		</tr>
-		<tr>
-		<td class="th" align=CENTER colspan="2">Installments Powered by Skrill</td>
-		</tr>
-		<tr>
-		<td class="th" align=CENTER colspan="2"><strong><i>Important:</i></strong> To use this payment method to its full extent and in accordance with legal requirements, you have to link the containers <b>Skrill Installment Prepare Button</b>, <b>Skrill Installment Financing Check</b> and <b>Skrill Installment Financing Costs</b>.
-		</td>
-		</tr>
-		<tr>
-		<td>
-			<b>Skrill Installment Prepare Button</b>
-		</td>
-			<td>
-				A link with the container Checkout: Override "Order now" button</strong> replaces the <strong>Order now</strong> button with <strong>Apply for installments</strong> when a customer selects the payment method Installments Powered by Skrill.
-			</td>
-			</tr>
-			<tr>
-			<td>
-				<b>Skrill Installment Financing Check</b>
-			</td>
-			<td>
-After a click on <strong>Apply for installments</strong>, the customer is redirected to Skrill's website to choose between qualifying financing options. After this, the customer is redirected to the shop. The seller has to inform about all details concerning the payment before the customer makes the order. Back in the shop, an overlay opens to display the total of the basket items and the financing costs. This overlay can only be exited by clicking on <strong>Cancel</strong> or <strong>Order now</strong>.<br />Clicking on <strong>Cancel</strong> leads back to the checkout, clicking on <strong>Order now</strong> irrevocably confirms the payment by installments. <br />The Financing Check has to be linked with one of the containers in the checkout, although not as an override, since this could overwrite critical content.<br />
-			</td>
-		</tr>
-		<tr>
-		<td>
-				<b>Skrill Installment Financing Check</b>
-			</td>
-			<td>
-				According to legal requirements, all financing costs have to be displayed at the time of purchase. Ideal is a link with <strong>Order confirmation: Add content after totals, since the financing costs have to be displayed below the gross amount. Ideal is a link with Order confirmation: Add content after totals</strong>, since the financing costs have to be displayed below the gross amount. In addition, the financing costs are displayed on the customer invoice.
-			</td>
-			</tr>
-			<tr>
-			<td>
-				<b>Skrill Installment Generic Upstream Presentment</b>
-			</td>
-			<td>
-				Optional: Advertises the general possibility of paying by Installments Powered by Skrill. Link any containers in which Installments Powered by Skrill should be mentioned.
-			</td>
+			<td>Die E-Mail-Adresse Ihres Skrill-Kontos.</td>
 		</tr>
 		<tr>
 			<td>
-				<b>Skrill Installment Specific Upstream Presentment</b>
+				Logo-URL
 			</td>
+			<td>Der URL des Logos, das oben rechts auf der Skrill-Seite angezeigt werden soll. Das Logo muss über HTTPS abrufbar sein, da es sonst nicht angezeigt wird. Optimale Ergebnisse erhalten Sie bei Logos mit Abmessungen von max. 200px Breite und 50px Höhe.</td>
+		</tr>
+		<tr>
 			<td>
-Optional: In contrast to the Generic Upstream Presentment, this container calculates qualifying financing options for the current item resp. the contents of the shopping cart. The most favourable option&nbsp;– depending on the total amount&nbsp;– takes precedence.
+				Shop Url
 			</td>
+			<td>Der URL Ihres Geschäfts</td>
+		</tr>
+		<tr>
+			<td>
+				MQI/API-Passwort
+			</td>
+			<td>Ist dieses Feature aktiviert, können Sie damit Rückzahlungen anweisen und Transaktionsstatus prüfen. Zum Einrichten müssen Sie sich bei Ihrem Skrill-Konto anmelden. Navigieren Sie zu Settings -> Developer Settings (Einstellungen > Einstellungen für Entwickler)</td>
+		</tr>
+		<tr>
+			<td>
+				Geheimwort
+			</td>
+			<td>Dieses Feature ist obligatorisch. Es sichert die Integrität der Daten, die auf Ihre Server zurück gepostet werden. Zum Einrichten müssen Sie sich bei Ihrem Skrill-Konto anmelden. Navigieren Sie zu Settings -> Developer Settings (Einstellungen > Einstellungen für Entwickler).</td>
+		</tr>
+		<tr>
+			<td>
+				Anzeigen
+			</td>
+			<td>iFrame – Wenn diese Option aktiviert ist, wird das Quick Checkout-Zahlungsformular auf Ihrer Website eingebettet. Redirect – Wenn diese Option aktiviert ist, wird der Kunde zum Quick Checkout-Zahlungsformular weitergeleitet. Diese Option empfiehlt sich für Zahlungsoptionen, bei denen der Benutzer auf eine externe Website weitergeleitet wird.</td>
+		</tr>
+		<tr>
+			<td>
+				E-Mail-Adresse des Händlers
+			</td>
+			<td>Ihre E-Mail-Adresse zum Empfangen von Zahlungsmitteilungen.</td>
 		</tr>
 	</tbody>
 </table>
 
-## Automatically refunding Skrill payments
+#### Verwalten der Zahlungsmittel:
 
-Set up an event procedure to automatically refund a Skrill payment.
-
-##### Setting up an event procedure:
-
-1. Go to **Settings » Orders » Event procedures**. 2. Click on **Add event procedure**. → The **Create new event procedure** window will open. 3. Enter the name. 4. Select the event listed in table 4. 5. **Save** the settings. 6. Pay attention to the explanations given in table 4 and carry out the settings as desired. 7. Place a check mark next to the option **Active**. 8. **Save** the settings.
+<ul>
+	<li>Navigieren Sie zu Settings » Orders » Skrill (Einstellungen » Aufträge » Skrill) » Zahlungsmittel auswählen (z. B. Visa, Giropay oder Rapid Transfer).</li>
+	<li>Wählen Sie einen Client (Store) aus.</li>
+	<li>Nehmen Sie die Einstellungen vor.</li>
+	<li>Speichern Sie die Einstellungen.</li>
+</ul>
 
 <table>
+	<caption>Achten Sie auf die Informationen in der Tabelle unten</caption>
 	<thead>
 		<th>
-			Setting
+			Einstellung
 		</th>
 		<th>
-			Option
-		</th>
-<th>
-			Selection
+			Erklärung
 		</th>
 	</thead>
 	<tbody>
-      <tr>
-         <td><strong>Event</strong></td>
-         <td><strong>Select the event to trigger a refund.</strong></td>
-<td></td>
-      </tr>
-      <tr>
-         <td><strong>Filter 1</strong></td>
-         <td><strong>Order &gt; Payment method</strong></td>
-<td><strong>Skrill</strong></td>
-      </tr>
-      <tr>
-         <td><strong>Procedure</strong></td>
-         <td><strong>Plugin &gt; Refunding a Skrill payment</strong></td>
-<td>&nbsp;</td>
-      </tr>
-</tbody>
-	<caption>
-		Table 4: Event procedure for automatically refunding Skrill payments
-	</caption>
+		<tr>
+			<td>
+				Bezeichnung des Zahlungsmittels
+			</td>
+			<td>Bezeichnung des Zahlungsmittels auf Englisch und Deutsch</td>
+		</tr>
+		<tr>
+			<td>
+				Aktiviert
+			</td>
+			<td>Häkchen setzen, um das Zahlungsmittel zu aktivieren.</td>
+		</tr>
+		<tr>
+			<td>
+				Separat anzeigen
+			</td>
+			<td>Häkchen setzen, um das Zahlungsmittel separat anzuzeigen.</td>
+		</tr>
+	</tbody>
 </table>
 
+## Automatische Aktualisierung des Auftragsstatus bei Skrill-Zahlungen
+Ereignisprozedur einrichten, um den Auftragsstatus von Skrill-Zahlungen automatisch zu aktualisieren.
+
+#### Einrichten einer Ereignisprozedur:
+<ul>
+	<li>Navigieren Sie zu Settings » Orders » Event procedures (Einstellungen » Aufträge » Ereignisprozeduren).</li>
+	<li>Klicken Sie auf „Add event procedure“ (Ereignisprozedur hinzufügen). → Das Fenster „Create new event procedure“ (Neue Ereignisprozedur erstellen) wird geöffnet.</li>
+	<li>Geben Sie die Bezeichnung ein: Skrill-Auftragsstatus aktualisieren</li>
+	<li>Wählen Sie das Ereignis aus: Statusänderung – [4] In Vorbereitung zum Versand</li>
+	<li>Speichern Sie die Einstellungen.</li>
+	<li>Setzen Sie ein Häkchen neben der Option „Active“ (Aktiv).</li>
+	<li>Filter hinzufügen: Wählen Sie „Order - Payment method“ (Auftrag – Zahlungsmittel; bitte alle Skrill-Zahlungsmittel markieren).</li>
+	<li>Prozeduren hinzufügen: Wählen Sie „Plugins - Update order status the Skrill-Payment“ (Plugins – Auftragsstatus der Skrill-Zahlung aktualisieren)</li>
+	<li>Speichern Sie die Einstellungen.</li>
+</ul>
+
+Wenn Sie anschließend den Auftragsstatus von [3] „Waiting for payment“ (Warte auf Zahlung) in [4] „In preparation for shipping“ (In Vorbereitung zum Versand) ändern, wird die Aktualisierung des Skrill-Auftragsstatus ausgeführt.
+
+## Automatische Rückerstattung von Skrill-Zahlungen
+Ereignisprozedur einrichten, um eine Skrill-Zahlung rückzuerstattetn.
+
+#### Einrichten einer Ereignisprozedur:
+<ul>
+	<li>Navigieren Sie zu Settings » Orders » Event procedures (Einstellungen » Aufträge » Ereignisprozeduren).</li>
+	<li>Klicken Sie auf „Add event procedure“ (Ereignisprozedur hinzufügen). → Das Fenster „Create new event procedure“ () wird geöffnet.</li>
+	<li>Geben Sie die Bezeichnung ein: Skrill-Rückerstattung</li>
+	<li>Wählen Sie das Ereignis aus: „New credit note“ (Neue Gutschrift).</li>
+	<li>Speichern Sie die Einstellungen.</li>
+	<li>Setzen Sie ein Häkchen neben der Option „Active“ (Aktiv).</li>
+	<li>Filter hinzufügen: Wählen Sie „Order - Payment method“ (Auftrag – Zahlungsmittel; bitte alle Skrill-Zahlungsmittel markieren)</li>
+	<li>Prozeduren hinzufügen: Wählen Sie „Plugins - Refund the Skrill-Payment“ (Plugins – Skrill-Zahlung rückerstatten)</li>
+	<li>Speichern Sie die Einstellungen.</li>
+</ul>
+Wenn Sie nun eine neue Gutschrift erstellen, wird die Skrill-Rückerstattung ausgeführt.
 
 ## This project is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE. – find further information in the [LICENSE.md](https://github.com/plentymarkets/plugin-payment-paypal/blob/master/LICENSE.md).
