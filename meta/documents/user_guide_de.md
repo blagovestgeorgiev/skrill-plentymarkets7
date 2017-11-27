@@ -124,7 +124,7 @@ Nach der Installation des Skrill-Plugins und dem Verbinden Ihres Kontos ist Skri
 				<b>Infoseite</b>
 			</td>
 			<td>
-				Wählen Sie eine Kategorieseite vom Typ <strong> Inhalt </ strong> aus oder geben Sie die URL einer Website ein, die bereitgestellt werden soll. <strong><a href="https://www.plentymarkets.co.uk/manual/payment/managing-bank-details/#2-2">Informationen zur Zahlungsmethode</a></strong>.
+				Wählen Sie eine Kategorieseite vom Typ <strong> Inhalt </strong> aus oder geben Sie die URL einer Website ein, die bereitgestellt werden soll. <strong><a href="https://www.plentymarkets.co.uk/manual/payment/managing-bank-details/#2-2">Informationen zur Zahlungsmethode</a></strong>.
 			</td>
 		</tr>
 		<tr>
@@ -151,13 +151,13 @@ Nach der Installation des Skrill-Plugins und dem Verbinden Ihres Kontos ist Skri
 				<b>Zuschläge</b>
 			</td>
 			<td>
-Wenn die Zahlung mit Skrill zusätzliche Kosten verursacht, geben Sie den Prozentwert oder den Flatrate-Wert ein. Die Auswahl hängt von den Bedingungen Ihres Vertrags ab. <Strong> Inland (Zuschlag): </ strong> Geben Sie eine Pauschale ein. Der eingegebene Wert wird bei den Aufträgen berücksichtigt, die dem Systemland entsprechen. Sobald der Kunde die Zahlungsmethode ausgewählt hat, werden diese Kosten zu der bestimmten Bestellung im Bestellprozess hinzugefügt. Der Betrag wird zur Gesamtsumme in der Bestellung hinzugefügt und nicht einzeln angezeigt. <br />
+Wenn die Zahlung mit Skrill zusätzliche Kosten verursacht, geben Sie den Prozentwert oder den Flatrate-Wert ein. Die Auswahl hängt von den Bedingungen Ihres Vertrags ab. <Strong> Inland (Zuschlag): </strong> Geben Sie eine Pauschale ein. Der eingegebene Wert wird bei den Aufträgen berücksichtigt, die dem Systemland entsprechen. Sobald der Kunde die Zahlungsmethode ausgewählt hat, werden diese Kosten zu der bestimmten Bestellung im Bestellprozess hinzugefügt. Der Betrag wird zur Gesamtsumme in der Bestellung hinzugefügt und nicht einzeln angezeigt. <br />
 
-Prozentsatz <strong> Inland (Zuschlag): </ strong> Geben Sie einen Prozentwert ein. Der eingegebene Wert wird bei den Aufträgen berücksichtigt, die dem Systemland entsprechen. <Strong> Ausland (Zuschlag): </ strong> Geben Sie eine Pauschale ein. Der eingegebene Wert wird bei Bestellungen berücksichtigt, die einem ausländischen Land entsprechen. Sobald der Kunde die Zahlungsmethode ausgewählt hat, werden diese Kosten zu der bestimmten Bestellung im Bestellprozess hinzugefügt. Der Betrag wird zur Gesamtsumme in der Bestellung hinzugefügt und nicht einzeln angezeigt. <br />
+Prozentsatz <strong> Inland (Zuschlag): </strong> Geben Sie einen Prozentwert ein. Der eingegebene Wert wird bei den Aufträgen berücksichtigt, die dem Systemland entsprechen. <Strong> Ausland (Zuschlag): </strong> Geben Sie eine Pauschale ein. Der eingegebene Wert wird bei Bestellungen berücksichtigt, die einem ausländischen Land entsprechen. Sobald der Kunde die Zahlungsmethode ausgewählt hat, werden diese Kosten zu der bestimmten Bestellung im Bestellprozess hinzugefügt. Der Betrag wird zur Gesamtsumme in der Bestellung hinzugefügt und nicht einzeln angezeigt. <br />
 
-Prozentsatz <strong> Ausland (Aufpreis) </ strong>: Geben Sie einen Prozentwert ein. Der eingegebene Wert wird bei Bestellungen berücksichtigt, die einem ausländischen Land entsprechen. <br />
+Prozentsatz <strong> Ausland (Aufpreis) </strong>: Geben Sie einen Prozentwert ein. Der eingegebene Wert wird bei Bestellungen berücksichtigt, die einem ausländischen Land entsprechen. <br />
 
-<strong> <i> Wichtig: </ i> </ strong> Geben Sie keinen Wert in beide Felder ein (Prozentsatz und Flatrate).
+<strong> <i> Wichtig: </i> </strong> Geben Sie keinen Wert in beide Felder ein (Prozentsatz und Flatrate).
 		</tr>
 	</tbody>
 </table>
@@ -169,7 +169,7 @@ Dieses Menü entspricht dem für Skrill PLUS, mit Ausnahme der Beschreibung der 
 1. Navigieren Sie zu **Einstellungen&nbsp;Skripts&nbsp;»» Skrill-Raten von Skrill**. 2. Wählen Sie einen Client (Geschäft) aus. 3. Nehmen Sie die Einstellungen vor. Beachten Sie die Angaben in Tabelle 3. 4. ** Speichern Sie ** die Einstellungen.
 
 <div class="alert alert-warning" role="alert">
-    <strong> <i> Wichtig: </ i> </ strong> Um diese Zahlungsmethode in vollem Umfang und gemäß den gesetzlichen Bestimmungen nutzen zu können, müssen Sie <a href="#10."> <strong> link < / strong> </a> die Container </ b> Skrill Ratenvorbereitungs-Schaltfläche </ b>, <b> Skrill Ratenfinanzierungs-Check </ b> und <b> Skrill Ratenfinanzierungskosten </ b>. <br /> < br>
+    <strong> <i> Wichtig: </i> </strong> Um diese Zahlungsmethode in vollem Umfang und gemäß den gesetzlichen Bestimmungen nutzen zu können, müssen Sie <a href="#10."> <strong> link < / strong> </a> die Container </b> Skrill Ratenvorbereitungs-Schaltfläche </b>, <b> Skrill Ratenfinanzierungs-Check </b> und <b> Skrill Ratenfinanzierungskosten </b>. <br /> < br>
 Darüber hinaus sind von Skrill bereitgestellte Ratenzahlungen nur für deutsche Online-Shops ausgewählter Skrill-Verkäufer nach erfolgreicher Bewerbung verfügbar. Sich bewerben <a href="https://www.paypal.com/de/webapps/mpp/installments"><strong>Hier</strong></a> für von Skrill bereitgestellte Raten.
 </div>
 
@@ -226,7 +226,7 @@ Darüber hinaus sind von Skrill bereitgestellte Ratenzahlungen nur für deutsche
 				<b>Infoseite</b>
 			</td>
 			<td>
-				Wählen Sie eine Kategorieseite vom Typ <strong> Inhalt </ strong> aus oder geben Sie die URL einer Website ein, die bereitgestellt werden soll. <strong><a href="https://www.plentymarkets.co.uk/manual/payment/managing-bank-details/#2-2">Informationen zur Zahlungsmethode</a></strong>.
+				Wählen Sie eine Kategorieseite vom Typ <strong> Inhalt </strong> aus oder geben Sie die URL einer Website ein, die bereitgestellt werden soll. <strong><a href="https://www.plentymarkets.co.uk/manual/payment/managing-bank-details/#2-2">Informationen zur Zahlungsmethode</a></strong>.
 			</td>
 		</tr>
 		<tr>
