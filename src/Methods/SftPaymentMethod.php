@@ -15,7 +15,7 @@ class SftPaymentMethod extends AbstractPaymentMethod
 	/**
 	 * @var name
 	 */
-	protected $name = 'Klarna';
+	protected $name = 'Sofort';
 
 	/**
 	 * @var allowedBillingCountries
