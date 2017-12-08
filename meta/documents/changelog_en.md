@@ -20,3 +20,9 @@
 ### Features :
 
 * Changed author icons and preview images for Plentymarketplace publishing
+
+## Release 1.0.3 (2017-12-08)
+
+### Features :
+
+* Changes on meta folder

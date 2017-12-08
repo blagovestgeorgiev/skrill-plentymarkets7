@@ -20,3 +20,9 @@
 ### Erweiterungen :
 
 * Geänderte Autor Icons und Vorschaubilder für Plentymarketplace veröffentlichung 
+
+## Veröffentlichung 1.0.3 (2017-12-08)
+
+### Erweiterungen :
+
+* Änderungen an meta datei
