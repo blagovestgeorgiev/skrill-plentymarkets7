@@ -26,3 +26,9 @@
 ### Features :
 
 * Changes on meta folder
+
+## Release 1.0.4 (2017-12-22)
+
+#### Features :
+
+* Changes on user_gude_en.md and user_gude_de.md files

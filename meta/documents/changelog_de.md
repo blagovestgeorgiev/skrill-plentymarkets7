@@ -26,3 +26,9 @@
 ### Erweiterungen :
 
 * Änderungen an meta datei
+
+## Veröffentlichung 1.0.4 (2017-12-22)
+
+### Erweiterungen :
+
+* Änderungen auf user_gude_en.md und user_gude_de.md feile
