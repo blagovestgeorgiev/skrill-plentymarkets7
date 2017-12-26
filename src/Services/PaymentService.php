@@ -174,8 +174,7 @@ class PaymentService
 		$this->getLogger(__METHOD__)->error('Skrill:paymentMethod', $paymentMethod);
 
 		$basketService = pluginApp(BasketService::class);
-
-		$this->getLogger(__METHOD__)->error('Skrill:basketService', $basketService->getBasket()); 
+		$basketData = $basketService->getBasket();
 
 		$skrillSettings = $this->getSkrillSettings();
 
@@ -234,9 +233,9 @@ class PaymentService
 			'detail1_description' => 'order',
 			'detail1_text' => $basket->id,
 			'detail2_description' => "Order Amount",
-			'detail2_text' => $basketService->itemSum,
+			'detail2_text' => $basketData->itemSum,
 			'detail3_description' => "Shipping",
-			'detail3_text' => $basketService->shippingAmount,
+			'detail3_text' => $basketData->shippingAmount,
 			'detail1_description' => "Order pay from " . $billingAddress['email'],
 			'merchant_fields' => 'platform',
 			'platform' => '21477252',
