@@ -233,10 +233,9 @@ class PaymentService
 			'detail1_description' => 'order',
 			'detail1_text' => $basket->id,
 			'detail2_description' => "Order Amount",
-			'detail2_text' => $basketData->itemSum,
+			'detail2_text' => $basketData->itemSum . ' ' . $basket->currency,
 			'detail3_description' => "Shipping",
-			'detail3_text' => $basketData->shippingAmount,
-			'detail1_description' => "Order pay from " . $billingAddress['email'],
+			'detail3_text' => $basketData->shippingAmount . ' ' . $basket->currency,
 			'merchant_fields' => 'platform',
 			'platform' => '21477252',
 		];
