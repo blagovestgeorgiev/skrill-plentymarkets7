@@ -17,6 +17,8 @@ use Plenty\Modules\Order\Contracts\OrderRepositoryContract;
 use Plenty\Modules\Frontend\Services\SystemService;
 use Plenty\Plugin\Log\Loggable;
 
+use IO\Services\BasketService;
+
 use Skrill\Services\OrderService;
 use Skrill\Helper\PaymentHelper;
 use Skrill\Services\Database\SettingsService;
@@ -171,6 +173,10 @@ class PaymentService
 		$this->getLogger(__METHOD__)->error('Skrill:basket', $basket);
 		$this->getLogger(__METHOD__)->error('Skrill:paymentMethod', $paymentMethod);
 
+		$basketService = pluginApp(BasketService::class);
+
+		$this->getLogger(__METHOD__)->error('Skrill:basketService', $basketService); 
+
 		$skrillSettings = $this->getSkrillSettings();
 
 		if (empty($skrillSettings['merchantId'])
@@ -225,6 +231,12 @@ class PaymentService
 			'country' => $billingAddress['country'],
 			'amount' => $basket->basketAmount,
 			'currency' => $basket->currency,
+			'detail1_description' => 'order',
+			'detail1_text' => $basket->id,
+			'detail2_description' => "Order Amount",
+			'detail2_text' => '',
+			'detail3_description' => "Shipping",
+			'detail3_text' => '',
 			'detail1_description' => "Order pay from " . $billingAddress['email'],
 			'merchant_fields' => 'platform',
 			'platform' => '21477252',
