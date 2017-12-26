@@ -175,7 +175,7 @@ class PaymentService
 
 		$basketService = pluginApp(BasketService::class);
 
-		$this->getLogger(__METHOD__)->error('Skrill:basketService', $basketService); 
+		$this->getLogger(__METHOD__)->error('Skrill:basketService', $basketService->getBasket()); 
 
 		$skrillSettings = $this->getSkrillSettings();
 
