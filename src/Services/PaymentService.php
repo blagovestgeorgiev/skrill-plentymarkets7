@@ -231,7 +231,7 @@ class PaymentService
 			'amount' => $basket->basketAmount,
 			'currency' => $basket->currency,
 			'detail1_description' => 'order',
-			'detail1_text' => $basket->id,
+			'detail1_text' => $orderId,
 			'detail2_description' => "Order Amount",
 			'detail2_text' => $basketData->itemSum . ' ' . $basket->currency,
 			'detail3_description' => "Shipping",
