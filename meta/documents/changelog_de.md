@@ -32,3 +32,9 @@
 ### Erweiterungen :
 
 * Änderungen auf user_gude_en.md und user_gude_de.md feile
+
+## Veröffentlichung 1.0.5 (2017-12-26)
+
+### Erweiterungen :
+
+* Ändern Sie den Inhalt der Info-Schaltfläche im Zahlungs-Widget
