@@ -230,7 +230,7 @@ class PaymentService
 			'country' => $billingAddress['country'],
 			'amount' => $basket->basketAmount,
 			'currency' => $basket->currency,
-			'detail1_description' => 'order',
+			'detail1_description' => 'Order',
 			'detail1_text' => $orderId,
 			'detail2_description' => "Order Amount",
 			'detail2_text' => $basketData->itemSum . ' ' . $basket->currency,
