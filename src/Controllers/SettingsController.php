@@ -114,7 +114,7 @@ class SettingsController extends Controller
 		$plentyId = $this->systemService->getPlentyId();
 
 		try {
-			$configuration = $this->settingsService->getConfiguration($plentyId, $settingType);
+			$configuration = $this->settingsService->loadSetting($plentyId, $settingType);
 		}
 		catch (\Exception $e)
 		{
@@ -191,7 +191,7 @@ class SettingsController extends Controller
 			);
 		};
 
-		$result = $this->settingsService->saveConfiguration($settings);
+		$result = $this->settingsService->saveSettings($settingType, $settings);
 
 		if ($result == 1)
 		{
