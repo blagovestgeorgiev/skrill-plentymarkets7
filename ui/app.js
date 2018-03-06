@@ -7,7 +7,26 @@ $(document).ready(function () {
 		url : url
 	}).done(function (r){
 		$('hello-ui').html(r);
+		saveSettings();
 	}).fail(function() {
 
 	});
+
+	function saveSettings(){
+		$('#saveSettings').submit(function(e) {
+			e.preventDefault();
+			var saveUrl = '/skrill/settings/save';
+			$.ajax({
+				url : saveUrl,
+				type: 'post',
+				data: $(this).serialize()
+			}).done(function(r){
+				if (r == 'success') {
+					$('#successMessage').css('display', 'block');
+				} else if (r == 'failed') {
+					$('#errorMessage').css('display', 'block');
+				}
+			});
+		});
+	}
 })

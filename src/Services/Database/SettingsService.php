@@ -22,12 +22,18 @@ class SettingsService extends DatabaseBaseService
 	protected $tableName = 'settings';
 
 	/**
+	 * @var db
+	 */
+	protected $db;
+
+	/**
 	 * SettingsService constructor.
 	 * @param DataBase $dataBase
 	 */
 	public function __construct(DataBase $dataBase)
 	{
 		parent::__construct($dataBase);
+		$this->db = $dataBase;
 	}
 
 	/**
@@ -83,11 +89,10 @@ class SettingsService extends DatabaseBaseService
 		{
 			foreach ($settings as $setting)
 			{
-				foreach ($setting as $store => $values)
+				foreach ($setting[0] as $store => $values)
 				{
 					$id = 0;
 					$store = (int)str_replace('PID_', '', $store);
-
 					if ($store > 0)
 					{
 						$existValue = $this->getValues(Settings::class, ['name', 'webstore'], [$mode, $store], ['=','=']);
@@ -106,16 +111,13 @@ class SettingsService extends DatabaseBaseService
 						$settingModel->name = $mode;
 						$settingModel->value = $values;
 						$settingModel->updatedAt = date('Y-m-d H:i:s');
-
-						if ($settingModel instanceof Settings)
-						{
-							$this->setValue($settingModel);
-						}
+                        $this->db->save($settingModel);
 					}
 				}
 			}
 			return 1;
 		}
+		return 0;
 	}
 
 	/**
@@ -219,6 +221,7 @@ class SettingsService extends DatabaseBaseService
 		curl_setopt($curl, CURLOPT_POSTFIELDS, $postFields);
 
 		$response = curl_exec($curl);
+
 		if (curl_errno($curl))
 		{
 			$this->getLogger(__METHOD__)->error('Skrill:error', curl_error($curl));
