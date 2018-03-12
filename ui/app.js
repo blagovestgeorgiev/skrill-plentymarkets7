@@ -1,15 +1,13 @@
 $(document).ready(function () {
-	var helloUrl = new URL(document.URL);
-	var helloSettingType = helloUrl.searchParams.get('action');
+	var skrillUrl = new URL(document.URL);
+	var skrillSettingType = skrillUrl.searchParams.get('action');
 
-	var url = '/skrill/settings/'+helloSettingType+'/';
+	var url = '/skrill/settings/'+skrillSettingType+'/';
 	$.ajax({
 		url : url
 	}).done(function (r){
-		$('hello-ui').html(r);
+		$('skrill-ui').html(r);
 		saveSettings();
-	}).fail(function() {
-
 	});
 
 	function saveSettings(){
@@ -23,7 +21,7 @@ $(document).ready(function () {
 			}).done(function(r){
 				if (r == 'success') {
 					$('#successMessage').css('display', 'block');
-				} else if (r == 'failed') {
+				} else {
 					$('#errorMessage').css('display', 'block');
 				}
 			});
