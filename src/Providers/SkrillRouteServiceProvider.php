@@ -23,11 +23,11 @@ class SkrillRouteServiceProvider extends RouteServiceProvider
 		// Skrill-Settings routes
 		$apiRouter->version(
 						['v1'],
-						['namespace' => 'Skrill\Controllers', 'middleware' => 'oauth'],
+						['middleware' => 'oauth'],
 						function ($apiRouter) {
-							$apiRouter->post('payment/skrill/settings/', 'SettingsController@saveSettings');
-							$apiRouter->get('payment/skrill/settings/{settingType}', 'SettingsController@loadSettings');
-							$apiRouter->get('payment/skrill/setting/{plentyId}/{settingType}', 'SettingsController@loadSetting');
+							$apiRouter->post('payment/skrill/settings/', ['uses' => 'Skrill\Controllers\SettingsController@saveSettings']);
+							$apiRouter->get('payment/skrill/settings/{settingType}', ['uses' => 'Skrill\Controllers\SettingsController@loadSettings']);
+							$apiRouter->get('payment/skrill/setting/{plentyId}/{settingType}', ['uses' => 'Skrill\Controllers\SettingsController@loadSetting']);
 						}
 		);
 
