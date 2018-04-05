@@ -275,7 +275,7 @@ class PaymentService
 		}
 		else
 		{
-			$paymentPageUrl = $this->paymentHelper->getDomain().'/payment/skrill/pay/' . $sidResult;
+			$paymentPageUrl = $this->paymentHelper->getDomain().'/payment/skrill/pay/' . $sidResult . '/' . $orderId;
 		}
 
 		return [
