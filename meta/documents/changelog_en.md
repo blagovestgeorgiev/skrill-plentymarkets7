@@ -32,3 +32,9 @@
 #### Features :
 
 * Changes on user_gude_en.md and user_gude_de.md files
+
+## Release 1.0.5 (2017-12-26)
+
+#### Features :
+
+* Change Info button content on payment widget
