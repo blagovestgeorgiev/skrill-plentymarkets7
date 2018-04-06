@@ -91,12 +91,9 @@ class SettingsService extends DatabaseBaseService
 					if ($store > 0)
 					{
 						$existValue = $this->getValues(Settings::class, ['name', 'webstore'], [$mode, $store], ['=','=']);
-						if (isset($existValue) && is_array($existValue))
+						if (isset($existValue) && is_array($existValue) && $existValue[0] instanceof Settings)
 						{
-							if ($existValue[0] instanceof Settings)
-							{
-								$id = $existValue[0]->id;
-							}
+							$id = $existValue[0]->id;
 						}
 
 						/** @var Settings $settingModel */

@@ -78,19 +78,16 @@ class PaymentHelper
 	 */
 	public function getPaymentMethodByPaymentKey($paymentKey)
 	{
-		if (strlen($paymentKey))
-		{
-			// List all payment methods for the given plugin
-			$paymentMethods = $this->paymentMethodRepository->allForPlugin('skrill');
+		// List all payment methods for the given plugin
+		$paymentMethods = $this->paymentMethodRepository->allForPlugin('skrill');
 
-			if (!is_null($paymentMethods))
+		if (strlen($paymentKey) && !is_null($paymentMethods))
+		{
+			foreach ($paymentMethods as $paymentMethod)
 			{
-				foreach ($paymentMethods as $paymentMethod)
+				if ($paymentMethod->paymentKey == $paymentKey)
 				{
-					if ($paymentMethod->paymentKey == $paymentKey)
-					{
-						return $paymentMethod;
-					}
+					return $paymentMethod;
 				}
 			}
 		}
@@ -193,7 +190,7 @@ class PaymentHelper
 		$mopId = 0;
 		$paymentMethod = $this->getPaymentMethodByPaymentKey($paymentStatus['paymentKey']);
 
-		if (isset($paymentMethod))
+		if (!empty($paymentMethod))
 		{
 			$mopId = $paymentMethod->id;
 		}
@@ -398,12 +395,9 @@ class PaymentHelper
 		{
 			foreach ($properties as $property)
 			{
-				if ($property instanceof PaymentProperty)
+				if ($property instanceof PaymentProperty && $property->typeId == $propertyType)
 				{
-					if ($property->typeId == $propertyType)
-					{
-						return $property->value;
-					}
+					return $property->value;
 				}
 			}
 		}
@@ -557,7 +551,7 @@ class PaymentHelper
 	/**
 	 * get payment status (use for payment/refund detail information status).
 	 *
-	 * @param array $status
+	 * @param string $status
 	 * @param bool $isCredentialValid
 	 * @return string
 	 */

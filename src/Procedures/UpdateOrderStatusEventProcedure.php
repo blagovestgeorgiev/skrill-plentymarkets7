@@ -75,8 +75,7 @@ class UpdateOrderStatusEventProcedure
 						{
 							throw new \Exception('Update order status Skrill payment failed!');
 						}
-
-						if ($updateResult['success'])
+						elseif ($updateResult['success'])
 						{
 							$paymentStatus = $updateResult['response'];
 

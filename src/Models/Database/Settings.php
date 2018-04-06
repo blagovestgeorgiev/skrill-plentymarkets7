@@ -81,8 +81,8 @@ class Settings extends Model
 			'en' => array('paymentName' => 'Direct Debit / ELV'),
 		),
 		'skrill_sft' => array(
-			'de' => array('paymentName' => 'Klarna'),
-			'en' => array('paymentName' => 'Klarna'),
+			'de' => array('paymentName' => 'Sofort'),
+			'en' => array('paymentName' => 'Sofort'),
 		),
 		'skrill_ebt' => array(
 			'de' => array('paymentName' => 'Nordea Solo'),

@@ -48,7 +48,12 @@ class SettingsController extends Controller
 
 	/**
 	 * SettingsController constructor.
+	 *
+	 * @param Request $request
+	 * @param Response $response
+	 * @param SystemService $systemService
 	 * @param SettingsService $settingsService
+	 * @param PaymentHelper $paymentHelper
 	 */
 	public function __construct(
 					Request $request,
@@ -175,10 +180,10 @@ class SettingsController extends Controller
 			$settings['settings'][0]['PID_'.$plentyId] = array(
 				'language' => array(
 					'en' => array(
-						'paymentName' => $this->request->get('language_en_paymentName')
+						'paymentName' => $this->request->get('languageEnPaymentName')
 					),
 					'de' => array(
-						'paymentName' => $this->request->get('language_de_paymentName')
+						'paymentName' => $this->request->get('languageDePaymentName')
 					)
 				),
 				'enabled' => $this->request->get('enabled'),

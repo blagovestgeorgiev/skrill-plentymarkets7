@@ -3,7 +3,7 @@
     "marketplaceName": {"de":"Skrill", "en":"Skrill"},
     "namespace": "Skrill",
     "type": "payment",
-    "version": "1.0.0",
+    "version": "1.0.5",
     "license": "OSL-3.0",
     "isClosedSource": "True",
     "pluginIcon": "icon_plugin_xs.png",

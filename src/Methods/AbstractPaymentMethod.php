@@ -33,6 +33,11 @@ class AbstractPaymentMethod extends PaymentMethodService
 	protected $name = '';
 
 	/**
+	 * @var fee
+	 */
+	protected $fee = 0.00;
+
+	/**
 	 * @var allowedBillingCountries
 	 */
 	protected $allowedBillingCountries = array(
@@ -164,7 +169,7 @@ class AbstractPaymentMethod extends PaymentMethodService
 	{
 		$customerInvoiceAddressId = $this->checkout->getCustomerInvoiceAddressId();
 
-		if (isset($customerInvoiceAddressId))
+		if (!empty($customerInvoiceAddressId))
 		{
 			$billingCountryCode = $this->paymentService->getBillingCountryCode($customerInvoiceAddressId);
 
@@ -241,7 +246,7 @@ class AbstractPaymentMethod extends PaymentMethodService
 	 */
 	public function getFee()
 	{
-		return 0.00;
+		return $this->fee;
 	}
 
 	/**

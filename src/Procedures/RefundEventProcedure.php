@@ -106,8 +106,7 @@ class RefundEventProcedure
 						{
 							throw new \Exception('Refund Skrill payment failed!');
 						}
-
-						if ($refundResult['success'])
+						elseif ($refundResult['success'])
 						{
 							// create the new debit payment
 							/** @var Payment $debitPayment */

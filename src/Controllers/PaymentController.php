@@ -70,7 +70,7 @@ class PaymentController extends Controller
 	/**
 	 * handle return_url from payment gateway
 	 */
-	public function handleReturn()
+	public function handleReturnUrl()
 	{
 		$this->getLogger(__METHOD__)->error('Skrill:return_url', $this->request->all());
 		$this->sessionStorage->getPlugin()->setValue('skrillTransactionId', $this->request->get('transaction_id'));
@@ -87,9 +87,12 @@ class PaymentController extends Controller
 	}
 
 	/**
-	 * show payment widget
+	 * display payment widget
+	 *
+	 * @param Twig $twig
+	 * @param string $sid
 	 */
-	public function handlePayment(Twig $twig, $sid)
+	public function displayPaymentWidget(Twig $twig, $sid)
 	{
 		$paymentPageUrl = $this->gatewayService->getPaymentPageUrl($sid);
 		$this->getLogger(__METHOD__)->error('Skrill:paymentPageUrl', $paymentPageUrl);

@@ -99,7 +99,7 @@
                                 "entryPoint": "../../../../../skrill/settings/skrill_did"
                             },
                             {
-                                "label": "Klarna",
+                                "label": "Sofort",
                                 "menu": "settings/orders/skrill",
                                 "urlKey": "settings-skrill-sft",
                                 "entryPoint": "../../../../../skrill/settings/skrill_sft"
