@@ -49,3 +49,8 @@
 
 ### Erweiterungen :
 * Fix Bug: Falsche Weiterleitungsseite, wenn nach Erfolg der Zahlung aktualisiert wurde
+
+## Veröffentlichung 1.0.7 (2018-05-17)
+
+### Erweiterungen :
+* Fix Bug: Bestellstatus aktualisieren.
