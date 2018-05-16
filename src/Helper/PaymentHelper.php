@@ -13,6 +13,7 @@ use Plenty\Modules\Payment\Models\Payment;
 use Plenty\Modules\Order\Models\Order;
 use Plenty\Modules\Order\Shipping\Countries\Contracts\CountryRepositoryContract;
 use Plenty\Plugin\Log\Loggable;
+use IO\Services\CustomerService;
 
 /**
 * Class PaymentHelper
@@ -68,6 +69,36 @@ class PaymentHelper
 		$this->paymentRepository                = $paymentRepository;
 		$this->paymentPropertyRepository        = $paymentPropertyRepository;
 		$this->orderRepository                  = $orderRepository;
+	}
+
+	/**
+	 * get Customer Id is active
+	 *
+	 * 
+	 * @return int $customerId
+	 */
+	public function getCustomerId() 
+	{
+		$customerService = pluginApp(CustomerService::class);
+		$customerId = $customerService->getContactId();
+		return $customerId;
+	}
+
+	/**
+	 * get Customer Login status
+	 *
+	 * 
+	 * @return bool $isLogin
+	 */
+	public function getIsLogin() 
+	{
+		if ($this->getCustomerId()) {
+			$isLogin = true;
+		} else {
+			$isLogin = false;
+		}
+
+		return $isLogin;
 	}
 
 	/**
@@ -267,7 +298,9 @@ class PaymentHelper
 						PaymentProperty::TYPE_TRANSACTION_ID,
 						$paymentStatus['transaction_id']
 		);
-
+		$this->getLogger(__METHOD__)->error('Skrill:typeTransactionId', PaymentProperty::TYPE_TRANSACTION_ID);
+		$this->getLogger(__METHOD__)->error('Skrill:paymentStatus', $paymentStatus);
+		$this->getLogger(__METHOD__)->error('Skrill:transactionId', $paymentStatus['transaction_id']);
 		$this->getLogger(__METHOD__)->error('Skrill:payments', $payments);
 
 		if (count($payments) > 0)

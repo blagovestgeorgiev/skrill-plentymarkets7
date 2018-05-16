@@ -38,3 +38,14 @@
 ### Erweiterungen :
 
 * Ändern Sie den Inhalt der Info-Schaltfläche im Zahlungs-Widget
+
+## Veröffentlichung 1.0.6 (2018-02-13)
+
+### Erweiterungen :
+
+* Behebe den Fehlerbetrag im Zahlungs-Widget
+
+## Veröffentlichung 1.0.6 (2018-04-06)
+
+### Erweiterungen :
+* Fix Bug: Falsche Weiterleitungsseite, wenn nach Erfolg der Zahlung aktualisiert wurde

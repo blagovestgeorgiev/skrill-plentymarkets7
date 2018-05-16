@@ -38,3 +38,14 @@
 #### Features :
 
 * Change Info button content on payment widget
+
+## Release 1.0.6 (2018-02-13)
+
+#### Features :
+
+* fix bugs amount on payment widget
+
+## Release 1.0.6 (2018-04-06)
+
+#### Features :
+* Fix Bug : Wrong redirect page if refresh after payment success

@@ -76,6 +76,7 @@ class SettingsController extends Controller
 	 */
 	public function saveSettings(Request $request)
 	{
+		$this->getLogger(__METHOD__)->error('Skrill:request', $request);
 		return $this->settingsService->saveSettings($request->get('settingType'), $request->get('settings'));
 	}
 
@@ -114,7 +115,7 @@ class SettingsController extends Controller
 		$plentyId = $this->systemService->getPlentyId();
 
 		try {
-			$configuration = $this->settingsService->getConfiguration($plentyId, $settingType);
+			$configuration = $this->settingsService->loadSetting($plentyId, $settingType);
 		}
 		catch (\Exception $e)
 		{
@@ -143,6 +144,7 @@ class SettingsController extends Controller
 	 */
 	public function saveConfiguration()
 	{
+
 		$settingType = $this->request->get('settingType');
 		$plentyId = $this->request->get('plentyId');
 		$apiPassword = $this->request->get('apiPassword');
@@ -158,8 +160,6 @@ class SettingsController extends Controller
 		{
 			$secretWord = $oldConfiguration['secretWord'];
 		}
-
-		$settings['settingType'] = $settingType;
 
 		if ($settingType == 'skrill_general')
 		{
@@ -191,7 +191,7 @@ class SettingsController extends Controller
 			);
 		};
 
-		$result = $this->settingsService->saveConfiguration($settings);
+		$result = $this->settingsService->saveSettings($settingType, $settings);
 
 		if ($result == 1)
 		{
@@ -202,6 +202,6 @@ class SettingsController extends Controller
 			$status = 'failed';
 		}
 
-		return $this->response->redirectTo('skrill/settings/'.$settingType.'?status='.$status);
+		return $status;
 	}
 }
