@@ -86,6 +86,12 @@ class OrderService
 		return LocalizedOrder::wrap($order, "de");
 	}
 
+	/**
+	* Update order status
+	* @param int $orderId
+	* @param float $statusId
+	* @return boolean true | false
+	*/
 	public function updateOrderStatus($orderId, $statusId) {
 		$data = [
 			'statusId' => $statusId
