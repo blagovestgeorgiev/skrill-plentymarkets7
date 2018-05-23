@@ -18,6 +18,8 @@ use Plenty\Modules\Frontend\Services\SystemService;
 use Plenty\Plugin\Log\Loggable;
 
 use IO\Services\BasketService;
+use IO\Services\CheckoutService;
+use IO\Services\CustomerService;
 
 use Skrill\Services\OrderService;
 use Skrill\Helper\PaymentHelper;
@@ -190,21 +192,24 @@ class PaymentService
 			];
 		}
 
-		$orderData = $this->orderService->placeOrder();
+		$orderData = $this->orderService->createOrder();
 
-		$this->getLogger(__METHOD__)->error('Skrill:orderData', $orderData);
+		// $this->getLogger(__METHOD__)->error('Skrill:orderData', $orderData);
 		$this->getLogger(__METHOD__)->error('Skrill:basketServices', $basketServices);
 
-		if (!isset($orderData->order->id))
-		{
-			return [
-				'type' => GetPaymentMethodContent::RETURN_TYPE_ERROR,
-				'content' => 'The order can not created'
-			];
-		}
+		// if (!isset($orderData->order->id))
+		// {
+		// 	return [
+		// 		'type' => GetPaymentMethodContent::RETURN_TYPE_ERROR,
+		// 		'content' => 'The order can not created'
+		// 	];
+		// }
 
-		$orderId = $orderData->order->id;
-		$transactionId = time() . $this->getRandomNumber(4) . $orderId;
+		$checkoutService = pluginApp(CheckoutService::class);
+		$customerService = pluginApp(CustomerService::class);
+
+		$basketId = $basketServices['id'];
+		$transactionId = time() . $this->getRandomNumber(4) . $basketId;
 
 		$billingAddress = $this->getAddress($this->getBillingAddress($basket));
 
@@ -213,10 +218,14 @@ class PaymentService
 			'recipient_description' => $skrillSettings['recipient'],
 			'transaction_id' => $transactionId,
 			'return_url' => $this->paymentHelper->getDomain().
-				'/payment/skrill/return?orderId='.$orderId,
+				'/payment/skrill/return',
 			'status_url' => $this->paymentHelper->getDomain().
-				'/payment/skrill/status?orderId='.$orderId.
-				'&paymentKey='.$paymentMethod->paymentKey,
+				'/payment/skrill/status?paymentKey='.$paymentMethod->paymentKey.
+				'&contactId=' . $customerService->getContactId() .
+				'&billingAddressId=' . $checkoutService->getBillingAddressId() .
+				'&deliveryAddressId=' . $checkoutService->getBillingAddressId() .
+				'&methodOfPaymentId=' . $checkoutService->getMethodOfPaymentId() .
+				'&shippingProfileId=' . $checkoutService->getShippingProfileId(),
 			'cancel_url' => $this->paymentHelper->getDomain().'/checkout',
 			'language' => $this->getLanguage(),
 			'logo_url' => $skrillSettings['logoUrl'],
@@ -229,8 +238,8 @@ class PaymentService
 			'country' => $billingAddress['country'],
 			'amount' => $basketServices['basketAmount'],
 			'currency' => $basketServices['currency'],
-			'detail1_description' => 'Order',
-			'detail1_text' => $orderId,
+			'detail1_description' => 'Basket Id',
+			'detail1_text' => $basketId,
 			'detail2_description' => "Order Amount",
 			'detail2_text' => $basketServices['itemSum'] . ' ' . $basketServices['currency'],
 			'detail3_description' => "Shipping",
@@ -274,7 +283,7 @@ class PaymentService
 		}
 		else
 		{
-			$paymentPageUrl = $this->paymentHelper->getDomain().'/payment/skrill/pay/' . $sidResult . '/' . $orderId;
+			$paymentPageUrl = $this->paymentHelper->getDomain().'/payment/skrill/pay/' . $sidResult;
 		}
 
 		return [

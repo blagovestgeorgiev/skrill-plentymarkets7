@@ -51,6 +51,9 @@ class OrderService
 		$sessionStorageService = pluginApp(SessionStorageService::class);
 		$checkoutService = pluginApp(CheckoutService::class);
 		$customerService = pluginApp(CustomerService::class);
+		$this->getLogger(__METHOD__)->error('Skrill:contactId', $customerService->getContactId());
+		$this->getLogger(__METHOD__)->error('Skrill:billingAddessId', $checkoutService->getBillingAddressId());
+		$this->getLogger(__METHOD__)->error('Skrill:deliveryAddressId', $checkoutService->getDeliveryAddressId());
 
 		$couponCode = null;
 		if (strlen($basketService->getBasket()->couponCode))
@@ -77,6 +80,7 @@ class OrderService
 						->done();
 
 		$order = $this->orderRepository->createOrder($order, $couponCode);
+		$this->getLogger(__METHOD__)->error('Skrill:orders', $order);
 
 		if ($customerService->getContactId() <= 0)
 		{
@@ -84,6 +88,14 @@ class OrderService
 		}
 
 		return LocalizedOrder::wrap($order, "de");
+	}
+
+	public function createOrder() {
+		$order = pluginApp(OrderBuilder::class)->prepare(OrderType::ORDER)
+						->fromBasket()
+						->done();
+		$order = $this->orderRepository->createOrder($order, null);
+		return $order;
 	}
 
 	/**

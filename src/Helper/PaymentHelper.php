@@ -13,7 +13,11 @@ use Plenty\Modules\Payment\Models\Payment;
 use Plenty\Modules\Order\Models\Order;
 use Plenty\Modules\Order\Shipping\Countries\Contracts\CountryRepositoryContract;
 use Plenty\Plugin\Log\Loggable;
+use Plenty\Modules\Frontend\Session\Storage\Contracts\FrontendSessionStorageFactoryContract;
 use IO\Services\CustomerService;
+use IO\Services\SessionStorageService;
+
+use Skrill\Services\OrderService;
 
 /**
 * Class PaymentHelper
@@ -49,6 +53,12 @@ class PaymentHelper
 	private $orderRepository;
 
 	/**
+	 *
+	 * @var orderService
+	 */
+	private $orderService;
+
+	/**
 	 * PaymentHelper constructor.
 	 *
 	 * @param PaymentMethodRepositoryContract $paymentMethodRepository
@@ -62,13 +72,15 @@ class PaymentHelper
 					PaymentRepositoryContract $paymentRepository,
 					PaymentPropertyRepositoryContract $paymentPropertyRepository,
 					PaymentOrderRelationRepositoryContract $paymentOrderRelationRepository,
-					OrderRepositoryContract $orderRepository
+					OrderRepositoryContract $orderRepository,
+					OrderService $orderService
 	) {
 		$this->paymentMethodRepository          = $paymentMethodRepository;
 		$this->paymentOrderRelationRepository   = $paymentOrderRelationRepository;
 		$this->paymentRepository                = $paymentRepository;
 		$this->paymentPropertyRepository        = $paymentPropertyRepository;
 		$this->orderRepository                  = $orderRepository;
+		$this->orderService 					= $orderService;
 	}
 
 	/**
@@ -339,6 +351,9 @@ class PaymentHelper
 			}
 		} else {
 			$payment = $this->createPlentyPayment($paymentStatus);
+			// $sessionStorage = pluginApp(CustomerService::class);
+			// $orderId = $sessionStorage->getSessionValue('lastOrderId');
+			// $paymentStatus['orderId'] = $orderId;
 
 			$this->assignPlentyPaymentToPlentyOrder($payment, (int) $paymentStatus['orderId']);
 		}
@@ -661,6 +676,7 @@ class PaymentHelper
 	{
 		$orderRepo = pluginApp(OrderRepositoryContract::class);
 		$authHelper = pluginApp(AuthHelper::class);
+		$this->getLogger(__METHOD__)->error('Skrill:orderId', $orderId);
 
 		$order = $authHelper->processUnguarded(
 						function () use ($orderRepo, $orderId) {

@@ -50,6 +50,6 @@ class SkrillRouteServiceProvider extends RouteServiceProvider
 		);
 
 		// Routes for Skrill payment widget
-		$router->get('payment/skrill/pay/{sid}/{orderId}', 'Skrill\Controllers\PaymentController@displayPaymentWidget');
+		$router->get('payment/skrill/pay/{sid}', 'Skrill\Controllers\PaymentController@displayPaymentWidget');
 	}
 }
