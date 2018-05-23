@@ -50,7 +50,8 @@
 #### Features :
 * Fix Bug : Wrong redirect page if refresh after payment success
 
-## Release 1.0.7 (2018-05-17)
+## Release 1.0.7 (2018-05-23)
 
 #### Features :
 * Fix Bug : update order status.
+* Fix issues automaticaly email customer.
