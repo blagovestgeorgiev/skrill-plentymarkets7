@@ -50,8 +50,9 @@
 #### Features :
 * Fix Bug : Wrong redirect page if refresh after payment success
 
-## Release 1.0.7 (2018-05-23)
+## Release 1.0.7 (2018-06-07)
 
 #### Features :
 * Fix Bug : update order status.
 * Fix issues automaticaly email customer.
+* Change sofort logo and name.

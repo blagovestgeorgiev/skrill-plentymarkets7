@@ -82,7 +82,7 @@ class Settings extends Model
 		),
 		'skrill_sft' => array(
 			'de' => array('paymentName' => 'Sofort'),
-			'en' => array('paymentName' => 'Sofort'),
+			'en' => array('paymentName' => 'Online Bank Transfer'),
 		),
 		'skrill_ebt' => array(
 			'de' => array('paymentName' => 'Nordea Solo'),

@@ -291,12 +291,7 @@ class PaymentService
 	private function getLanguage()
 	{
 		$language = $this->session->getLocaleSettings()->language;
-		if ($language == 'de')
-		{
-			return 'DE';
-		}
-
-		return 'EN';
+		return strtoupper($language);
 	}
 
 	/**

@@ -50,8 +50,9 @@
 ### Erweiterungen :
 * Fix Bug: Falsche Weiterleitungsseite, wenn nach Erfolg der Zahlung aktualisiert wurde
 
-## Veröffentlichung 1.0.7 (2018-05-23)
+## Veröffentlichung 1.0.7 (2018-06-07)
 
 ### Erweiterungen :
 * Fix Bug: Bestellstatus aktualisieren.
 * Beheben Sie Probleme automatisch per E-Mail Kunde.
+* Ändern Sie sofort das Logo und den Namen.
