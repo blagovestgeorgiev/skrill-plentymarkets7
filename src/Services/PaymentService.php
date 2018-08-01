@@ -173,7 +173,7 @@ class PaymentService
 		$this->getLogger(__METHOD__)->error('Skrill:paymentMethod', $paymentMethod);
 
 		$basketService = pluginApp(BasketService::class);
-		$basketServices = $basketService->getBasketForTemplate();
+		$basketData = $basketService->getBasket();
 
 		$skrillSettings = $this->getSkrillSettings();
 
@@ -193,7 +193,7 @@ class PaymentService
 		$orderData = $this->orderService->placeOrder();
 
 		$this->getLogger(__METHOD__)->error('Skrill:orderData', $orderData);
-		$this->getLogger(__METHOD__)->error('Skrill:basketServices', $basketServices);
+		$this->getLogger(__METHOD__)->error('Skrill:basketData', $basketData);
 
 		if (!isset($orderData->order->id))
 		{
@@ -227,14 +227,14 @@ class PaymentService
 			'postal_code' => $billingAddress['postalCode'],
 			'city' => $billingAddress['city'],
 			'country' => $billingAddress['country'],
-			'amount' => $basketServices['basketAmount'],
-			'currency' => $basketServices['currency'],
+			'amount' => $basketData->basketAmount,
+			'currency' => $basketData->currency,
 			'detail1_description' => 'Order',
 			'detail1_text' => $orderId,
 			'detail2_description' => "Order Amount",
-			'detail2_text' => $basketServices['itemSum'] . ' ' . $basketServices['currency'],
+			'detail2_text' => $basketData->itemSum . ' ' . $basketData->currency,
 			'detail3_description' => "Shipping",
-			'detail3_text' => $basketServices['shippingAmount'] . ' ' . $basketServices['currency'],
+			'detail3_text' => $basketData->shippingAmount . ' ' . $basketData->currency,
 			'merchant_fields' => 'platform',
 			'platform' => '21477252',
 		];

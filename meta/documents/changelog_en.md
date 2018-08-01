@@ -56,3 +56,8 @@
 * Fix Bug : update order status.
 * Fix issues automaticaly email customer.
 * Change sofort logo and name.
+
+## Release 1.0.8 (2018-08-01)
+
+#### Features :
+* Fix Bug : basket amount is null.

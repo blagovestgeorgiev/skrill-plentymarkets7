@@ -56,3 +56,8 @@
 * Fix Bug: Bestellstatus aktualisieren.
 * Beheben Sie Probleme automatisch per E-Mail Kunde.
 * Ändern Sie sofort das Logo und den Namen.
+
+## Veröffentlichung 1.0.8 (2018-08-01)
+
+### Erweiterungen :
+* Fix Bug: Der Korbbetrag ist null.
