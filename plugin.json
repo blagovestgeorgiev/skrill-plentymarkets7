@@ -5,7 +5,6 @@
     "type": "payment",
     "version": "1.0.8",
     "license": "OSL-3.0",
-    "isClosedSource": "True",
     "pluginIcon": "icon_plugin_xs.png",
     "price": 0.00,
     "description": "The module allows you to accept payments via cards, over 20 local payment methods and more than 80 banks. This extension enables merchants to view information about payments and configure which payment methods are shown to customers. Merchants can also view payment status information and refund payments from within the Admin interface.",
