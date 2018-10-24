@@ -61,3 +61,8 @@
 
 #### Features :
 * Fix Bug : basket amount is null.
+
+## Release 1.0.9 (2018-10-26)
+
+#### Features :
+* Implement paysafecash payment method.

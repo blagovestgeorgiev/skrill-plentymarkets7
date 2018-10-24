@@ -3,7 +3,7 @@
     "marketplaceName": {"de":"Skrill", "en":"Skrill"},
     "namespace": "Skrill",
     "type": "payment",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "license": "OSL-3.0",
     "pluginIcon": "icon_plugin_xs.png",
     "price": 0.00,
@@ -33,7 +33,7 @@
     "require"           : [],
     "dependencies"      : [],
     "runOnBuild"        : [
-        "Skrill\\Migrations\\CreatePaymentMethod",
-        "Skrill\\Migrations\\CreateSkrillTables"
+        "Skrill\\Migrations\\CreatePaymentMethod_1_0_9",
+        "Skrill\\Migrations\\CreateSkrillTables_1_0_9"
     ]
 }

@@ -61,3 +61,8 @@
 
 ### Erweiterungen :
 * Fix Bug: Der Korbbetrag ist null.
+
+## Veröffentlichung 1.0.9 (2018-10-26)
+
+### Erweiterungen :
+* Implementieren Sie die paysafecash-Zahlungsmethode.
